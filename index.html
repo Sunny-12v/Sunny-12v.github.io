@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sunny Kumar – Data Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f5f7fa;--card:#fff;--ink:#16202e;--mute:#566274;--line:#d9e0e8;--acc:#0f766e;--accbg:#e1f3f0;--wip:#9a5b00;--wipbg:#fdf0d9;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10161f;--card:#18202c;--ink:#e8edf3;--mute:#9aa7b8;--line:#2a3545;--acc:#4fd1c0;--accbg:#143a37;--wip:#f0b45a;--wipbg:#3a2a10;color-scheme:dark}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,sans-serif;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--acc)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 24px}
+h1{font-size:2.4rem;line-height:1.15;margin:0 0 8px;font-weight:600}
+.lead{font-size:1.1rem;color:var(--mute);max-width:62ch;margin:0 0 16px}
+nav a{margin-right:18px;font-weight:500;text-decoration:none}
+section{padding:28px 0}
+h2{font-size:1.5rem;margin:0 0 6px}
+.sub{color:var(--mute);margin:0 0 20px}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px;margin-bottom:18px}
+.proj h3{margin:0;font-size:1.2rem}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}
+.tag{font-size:.8rem;padding:2px 10px;border-radius:99px;background:var(--accbg);color:var(--acc);font-weight:500}
+.tag.wip{background:var(--wipbg);color:var(--wip)}
+.stack{color:var(--mute);font-size:.92rem;margin:4px 0 12px}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 14px;padding:0;list-style:none}
+.flow li{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 10px;font-size:.88rem}
+.flow li+li::before{content:"\2192";color:var(--acc);margin-right:8px;margin-left:-2px}
+.plain{margin:0 0 10px}
+.plain b{font-weight:600}
+.proj ul{margin:0 0 14px;padding-left:20px}
+.proj li{margin-bottom:4px}
+.links a{font-weight:500;text-decoration:none;border-bottom:1px solid var(--acc)}
+.job{margin-bottom:20px}
+.job h3{margin:0;font-size:1.05rem}
+.job .when{color:var(--mute);font-size:.9rem;margin:0 0 6px}
+.job ul{margin:0;padding-left:20px}
+dl{margin:0;display:grid;grid-template-columns:150px 1fr;gap:8px 16px}
+dt{font-weight:600}dd{margin:0;color:var(--mute)}
+@media(max-width:560px){dl{grid-template-columns:1fr}h1{font-size:1.9rem}}
+footer{padding:28px 0 48px;color:var(--mute);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Sunny Kumar</h1>
+  <p class="lead">Analytics engineer who builds data pipelines: streaming, lakehouse and warehouse systems, plus GenAI tools that help people use their data. Currently at Swiggy, Bengaluru.</p>
+  <nav><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+</header>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="sub">Each project has its own GitHub repository. Projects marked “In progress” are still being built.</p>
+  <div id="list"></div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="job"><h3>Analytics Engineer, Swiggy</h3><p class="when">Apr 2026 – present, Bengaluru</p><ul>
+    <li>Built PySpark and Databricks ETL/ELT pipelines processing 50+ GB of operational data daily.</li>
+    <li>Re-engineered pipelines with incremental CDC and Delta Lake, cutting runtime by 30% and refresh latency from 6 hours to 45 minutes.</li>
+    <li>Automated data quality checks across 15+ production pipelines, reducing downstream data issues by 25%.</li>
+    <li>Built fact and dimension models and data marts for 10+ stakeholders, reducing manual reporting effort by 20%.</li></ul></div>
+  <div class="job"><h3>Data Associate, Amazon</h3><p class="when">Oct 2025 – Apr 2026, Hyderabad</p><ul>
+    <li>Processed and validated 5M+ operational records with SQL and Python for reporting and business decisions.</li>
+    <li>Automated recurring transformation and validation workflows, reducing manual effort by 30%, and tuned SQL to cut report generation time by 25%.</li></ul></div>
+  <div class="job"><h3>Business Analyst Intern, Urban Company</h3><p class="when">Jul 2025 – Oct 2025, Bengaluru</p><ul>
+    <li>Analysed operational and customer data with SQL and Excel, and found 10+ bottlenecks through funnel and root-cause analysis.</li></ul></div>
+</section>
+
+<section id="skills">
+  <h2>Skills and certifications</h2>
+  <dl>
+    <dt>Languages</dt><dd>Python, SQL, PySpark, Bash</dd>
+    <dt>Big data</dt><dd>Apache Spark, Kafka, Spark Structured Streaming, Delta Lake</dd>
+    <dt>Databricks</dt><dd>Unity Catalog, Auto Loader, Delta Live Tables, Workflows</dd>
+    <dt>Cloud</dt><dd>AWS S3, Glue, EMR, Redshift, Lambda, Kinesis, IAM</dd>
+    <dt>Warehousing</dt><dd>Snowflake, Redshift, dimensional modelling, star schema</dd>
+    <dt>Orchestration</dt><dd>Apache Airflow, dbt, CI/CD, Git</dd>
+    <dt>Analytics and GenAI</dt><dd>Power BI, Tableau, A/B testing, MLflow, LangChain, RAG, FAISS</dd>
+    <dt>Certifications</dt><dd>Databricks Certified Data Engineer Associate · Snowflake SnowPro Core · AWS Certified Cloud Practitioner · Generative AI Certification (Coursera)</dd>
+    <dt>Education</dt><dd>B.Tech, Electronics and Communication Engineering, Vellore Institute of Technology, 2021–2025 · CGPA 7.85/10</dd>
+  </dl>
+</section>
+
+<section id="contact">
+  <h2>Let’s talk</h2>
+  <p class="sub">I’m open to conversations about data engineering, streaming and analytics work.</p>
+  <p><a href="mailto:sunnykumar280260@gmail.com">sunnykumar280260@gmail.com</a><br>
+  <a href="tel:+918235912324">+91 82359 12324</a><br>
+  <a href="https://www.linkedin.com/in/sunny-kumar-b44146216/">LinkedIn</a> · <a href="https://github.com/Sunny-12v">GitHub</a></p>
+</section>
+<footer>© 2026 Sunny Kumar</footer>
+</div>
+
+<script>
+var GH="https://github.com/Sunny-12v/";
+var P=[
+{n:"Real-time streaming and GenAI data platform",r:"streaming-genai-data-platform",s:"Kafka, Spark Structured Streaming, Delta Lake, LangChain, RAG",f:["Producers","Kafka","Structured Streaming","Delta Lake","RAG assistant"],
+ w:"Events flow from producers into Kafka, Spark cleans and stores them in Delta Lake within seconds, and a chat assistant answers analytics questions in plain English from that data.",
+ b:["Built Kafka producers and consumers feeding Spark Structured Streaming jobs that process 50K+ events a day into Delta Lake with sub-2-second latency.","Added checkpointing, watermarking and fault-tolerant recovery so streams resume cleanly after failures.","Built a LangChain and FAISS RAG assistant for natural-language analytics questions, cutting manual reporting requests by 20%."]},
+{n:"Databricks medallion data engineering platform",r:"databricks-medallion-platform",s:"Databricks, PySpark, Delta Lake, Auto Loader, Unity Catalog",f:["Raw files","Bronze","Silver","Gold"],
+ w:"Raw files are loaded as they arrive (Bronze), cleaned and de-duplicated (Silver), then shaped into tables ready for analysis (Gold).",
+ b:["Designed a Bronze–Silver–Gold architecture with Auto Loader for incremental ingestion, cutting latency by 30%.","Handled schema evolution, deduplication and data quality checks, with governance through Unity Catalog. Spark workloads ran 25% faster after tuning.","Modelled Gold datasets for customer, product and category analytics, reducing ad-hoc query time by 40%."]},
+{n:"Cloud data warehouse and analytics pipeline",r:"cloud-dwh-airflow-dbt-snowflake",s:"Apache Airflow, dbt, Snowflake",f:["Sources","Airflow","dbt staging","Marts (star schema)","BI"],
+ w:"Airflow loads data from several sources into Snowflake, dbt turns it into tested, analysis-ready tables, and dashboards read from those tables.",
+ b:["Orchestrated multi-source ELT with Airflow and Snowflake, using modular dbt staging, intermediate and mart models in a star schema.","Added dbt tests and CI checks for uniqueness, nulls and referential integrity, and tuned Snowflake workloads to cut dashboard latency by 30%."]},
+{n:"CDC lakehouse with Debezium",r:"cdc-lakehouse-debezium",wip:1,s:"Postgres, Debezium, Kafka, Delta Lake, Airflow",f:["Postgres","Debezium","Kafka","Delta (SCD2)"],
+ w:"Every change made in a Postgres database is captured and replayed into Delta tables, so the lakehouse keeps a full history of how each row changed.",
+ b:["Capturing row-level changes from Postgres and replaying them into Delta tables with idempotent MERGE upserts.","Goal: SCD Type 2 history from real change events, schema evolution handling and automated data quality gates."]},
+{n:"pipeline-quality-kit: data quality checks as code",r:"pipeline-quality-kit",s:"Python, DuckDB, YAML, pytest, GitHub Actions",f:["checks.yml","DuckDB","Pass/fail report","CI gate"],
+ w:"A command-line tool: you list your data rules in a YAML file, it runs them, and it fails your CI job or Airflow task when the data breaks a rule.",
+ b:["Open-source command-line tool where you describe checks in YAML: not null, unique, accepted values, ranges, foreign keys and freshness.","Each check is one SQL query that returns a failing-row count, and the exit code fails CI or an Airflow task when data is bad.","Covered by 9 unit tests that run on every push through GitHub Actions."]},
+{n:"Text-to-SQL analytics assistant with evaluation",r:"text-to-sql-assistant",wip:1,s:"LangChain, Snowflake or DuckDB, FAISS, Python",f:["Question","Schema retrieval","SQL guardrails","Warehouse","Answer"],
+ w:"Ask a business question in English and get an answer from the warehouse, with checks that only safe, read-only SQL ever runs.",
+ b:["Answers business questions in plain English over a dbt-modelled warehouse.","Goal: read-only SQL validation and a test set of questions that scores answer accuracy, so quality is measured instead of assumed."]},
+{n:"Data catalog Q&A assistant",r:"data-catalog-qa-assistant",wip:1,s:"RAG, FAISS, LangChain, dbt docs",f:["dbt docs and lineage","Embeddings","FAISS","Cited answers"],
+ w:"Analysts ask where a metric comes from or what a column means, and the assistant answers from the dbt documentation and shows where it found it.",
+ b:["Lets analysts ask where a metric comes from or what a column means, and answers with links to the model, column description and upstream tables.","Goal: every answer cites its source, and the assistant says when the documentation doesn’t cover the question."]},
+{n:"Pipeline incident triage agent",r:"pipeline-incident-triage-agent",wip:1,s:"LLM agents, Airflow, Python, structured outputs",f:["Failed Airflow task","Logs and recent changes","LLM analysis","Root-cause summary"],
+ w:"When an Airflow task fails, the agent reads the logs and suggests the likely cause and next step, so the on-call engineer starts with a diagnosis.",
+ b:["Reads the logs of a failed task and suggests the likely cause and the next step to fix it, so the on-call engineer starts with a diagnosis.","Goal: read-only access, structured output and a labelled set of past failures to measure how often the suggested cause is right."]},
+{n:"Document-to-table extraction pipeline",r:"doc-to-table-extraction",wip:1,s:"LLM extraction, Pydantic, PySpark, Delta Lake",f:["PDFs and reviews","LLM extraction","Schema validation","Delta tables"],
+ w:"Invoices and customer reviews are turned into clean, checked rows that analysts can query with SQL.",
+ b:["Turns unstructured documents such as invoices and customer reviews into validated rows that analysts can query with SQL.","Goal: Pydantic validation, a retry and review queue for bad outputs, and tracking of cost and accuracy per batch."]}
+];
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+var list=document.getElementById("list");
+P.forEach(function(p){
+  var d=el("article","proj"),top=el("div","top");
+  top.appendChild(el("h3",null,p.n));
+  top.appendChild(el("span",p.wip?"tag wip":"tag",p.wip?"In progress":"Built"));
+  d.appendChild(top);
+  d.appendChild(el("p","stack",p.s));
+  var fl=el("ul","flow");p.f.forEach(function(x){fl.appendChild(el("li",null,x))});d.appendChild(fl);
+  var pl=el("p","plain"),b=el("b",null,"In simple words: ");pl.appendChild(b);pl.appendChild(document.createTextNode(p.w));d.appendChild(pl);
+  var ul=el("ul");p.b.forEach(function(x){ul.appendChild(el("li",null,x))});d.appendChild(ul);
+  var l=el("p","links"),a=el("a",null,p.wip?"Follow on GitHub":"Code on GitHub");a.href=GH+p.r;l.appendChild(a);d.appendChild(l);
+  list.appendChild(d);
+});
+</script>
+</body>
+</html>
